@@ -1,0 +1,42 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-6">
+      <h3>ngIf</h3>
+      <label class="switch">
+        
+        <input type="checkbox" checked (click)="hideCard()">
+        <span class="slider round"></span>
+      </label>
+      <hr>
+      <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;" *ngIf="hide">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Secondary card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <h3>ngFor</h3>
+      <br>
+      <br>
+      <hr>
+
+      <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Primary card title</h5>
+          <p *ngFor="let d of data" class="card-text">{{d | json}}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="container">
+
+  <input type="text" class="input">
+  <p class="text-primary">{{title}}</p>
+  <button class="btn btn-primary" (click)="sendText()">Enviar</button>
+</div>
