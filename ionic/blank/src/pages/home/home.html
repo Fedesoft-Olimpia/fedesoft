@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color=primary>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let animal of animals" (click)="itemSelected(animal)">
+      <ion-avatar item-start>
+        <img src="{{animal.imagen}}">
+      </ion-avatar>
+      <h2>{{animal.nombre}}</h2>
+      <p>Ugh. As if.</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
