@@ -4,7 +4,7 @@ import { Animal } from '../../intefaces/animal.interface';
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html'                                                                                                                                                                                                                                                                                                                                                        
 })
 export class HomePage {
 
